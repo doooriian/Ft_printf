@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_part_1.c                                  :+:      :+:    :+:   */
+/*   print.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: doley <doley@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:33:51 by doley             #+#    #+#             */
-/*   Updated: 2024/10/16 15:52:45 by doley            ###   ########.fr       */
+/*   Updated: 2024/10/16 16:43:10 by doley            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,17 @@ int	ft_print_c(va_list args)
 {
 	char	c;
 
-	c = va_arg(args, char);
+	c = va_arg(args, int);
 	return (ft_putchar(c));
 }
 
 int	ft_print_s(va_list args)
 {
 	char	*str;
-	
+
 	str = va_arg(args, char *);
+	if (!str)
+		return (ft_putstr("(null)"));
 	return (ft_putstr(str));
 }
 
@@ -55,5 +57,5 @@ int	ft_print_u(va_list args)
 	unsigned int	nb;
 
 	nb = va_arg(args, unsigned int);
-	ft_putnbr_pos(nb);
+	return (ft_putnbr_pos(nb));
 }

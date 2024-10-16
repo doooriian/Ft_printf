@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_utils.c                                         :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: doley <doley@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:35:22 by doley             #+#    #+#             */
-/*   Updated: 2024/10/16 15:30:10 by doley            ###   ########.fr       */
+/*   Updated: 2024/10/16 16:43:15 by doley            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_putstr(char *str)
 	return (i);
 }
 
-int	ft_putnbr_pos(int nb)
+int	ft_putnbr_pos(unsigned int nb)
 {
 	int	count;
 
@@ -58,7 +58,7 @@ int	ft_putnbr(int nb)
 		nb = -nb;
 		count++;
 	}
-	else if (nb > 9)
+	if (nb > 9)
 		count += ft_putnbr(nb / 10);
 	count += ft_putchar((nb % 10) + '0');
 	return (count);
@@ -70,11 +70,13 @@ int	ft_putnbr_hexa(unsigned long nb, char format)
 	char	*base;
 
 	count = 0;
+	base = NULL;
 	if (format == 'x')
 		base = "0123456789abcdef";
 	else if (format == 'X')
 		base = "0123456789ABCDEF";
-	if (nb > 16)
+	if (nb >= 16)
 		count += ft_putnbr_hexa(nb / 16, format);
 	count += ft_putchar(base[nb % 16]);
+	return (count);
 }

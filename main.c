@@ -6,7 +6,7 @@
 /*   By: doley <doley@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:12:27 by doley             #+#    #+#             */
-/*   Updated: 2024/10/16 16:03:50 by doley            ###   ########.fr       */
+/*   Updated: 2024/10/16 16:43:19 by doley            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ int	ft_convert(char type, va_list args)
 	else if (type == 'u')
 		return (ft_print_u(args));
 	else if (type == 'x')
-		return (ft_print_x_X(args, 'x'));
+		return (ft_print_x_xx(args, 'x'));
 	else if (type == 'X')
-		return (ft_print_x_X(args, 'X'));
+		return (ft_print_x_xx(args, 'X'));
 	else if (type == '%')
 	{
 		ft_putchar('%');
@@ -36,7 +36,7 @@ int	ft_convert(char type, va_list args)
 	return (0);
 }
 
-int	fr_printf(const char *str, ...)
+int	ft_printf(const char *str, ...)
 {
 	int		count;
 	size_t	i;
