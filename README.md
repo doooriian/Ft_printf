@@ -34,13 +34,13 @@ The goal? Deliver a reliable, custom `Printf` that mirrors the core functionalit
 ## 📑 Key Features
 
 ### Supported Conversions
-- [`%c`](https://github.com/doooriian/Ft_printf/blob/main/ft_print_char.c) — Prints a single character.
-- [`%s`](https://github.com/doooriian/Ft_printf/blob/main/ft_print_str.c) — Prints a string.
-- [`%p`](https://github.com/doooriian/Ft_printf/blob/main/ft_print_ptr.c) — Prints a pointer address in hexadecimal.
-- [`%d`/`%i`](https://github.com/doooriian/Ft_printf/blob/main/ft_print_int.c) — Prints a decimal integer (signed).
-- [`%u`](https://github.com/doooriian/Ft_printf/blob/main/ft_print_uint.c) — Prints an unsigned decimal integer.
-- [`%x`/`%X`](https://github.com/doooriian/Ft_printf/blob/main/ft_print_hex.c) — Prints a hexadecimal integer (lowercase or uppercase).
-- [`%%`](https://github.com/doooriian/Ft_printf/blob/main/ft_print_percent.c) — Prints a literal percent sign.
+- [`%c`](https://github.com/doooriian/Ft_printf/blob/main/ft_print.c) — Prints a single character.
+- [`%s`](https://github.com/doooriian/Ft_printf/blob/main/ft_print.c) — Prints a string.
+- [`%p`](https://github.com/doooriian/Ft_printf/blob/main/ft_print.c) — Prints a pointer address in hexadecimal.
+- [`%d`/`%i`](https://github.com/doooriian/Ft_printf/blob/main/ft_print.c) — Prints a decimal integer (signed).
+- [`%u`](https://github.com/doooriian/Ft_printf/blob/main/ft_print_x_xx.c) — Prints an unsigned decimal integer.
+- [`%x`/`%X`](https://github.com/doooriian/Ft_printf/blob/main/ft_x_xx.c) — Prints a hexadecimal integer (lowercase or uppercase).
+- [`%%`](https://github.com/doooriian/Ft_printf/blob/main/ft_print.c) — Prints a literal percent sign.
 
 ### Core Files
 - [`main.c`](https://github.com/doooriian/Ft_printf/blob/main/main.c) — Main file handling format string parsing and output.
