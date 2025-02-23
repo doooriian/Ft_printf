@@ -57,22 +57,21 @@ The goal? Deliver a reliable, custom `Printf` that mirrors the core functionalit
 
 ## 🚀 How to Build and Run
 
-Clone the repository and use the following commands in your terminal:
+1. Clone repository
+    ```bash
+    git clone git@github.com:doooriian/Ft_printf.git
+    ```
 
-```bash
-# Compile the project and create the library
-make all
+2. Go inside project directory and run `make`
+    ```bash
+    cd Ft_printf
+    make
+    ```
+3. To use the library in your code, `#include` the following header
+    ```c
+    #include "printf.h"
 
-# Remove object files
-make clean
-
-# Remove object files and the library
-make fclean
-
-# Clean everything and recompile
-make re
-
-```
+</br>
 
 ## 🧪 Testing
 
