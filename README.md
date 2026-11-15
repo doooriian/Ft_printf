@@ -1,29 +1,18 @@
-<br />
-<p align="center">
-  <a href="https://42.fr/">
-    <img src="https://github.com/doooriian/42-Badges/blob/main/42_Logo.png" alt="42 Logo" width="250" height="250">
-  </a>
+<div align="center">
 
-  <h1 align="center">Ft_printf</h1>
+<a href="https://42.fr/"><img src="https://raw.githubusercontent.com/doooriian/42-Badges/main/badges/ft_printfe.png" width="125" alt="Ft_printf 42 project badge" /></a>
 
-  <p align="center">
-    A custom Printf implementation from 42 School
-    <br />
-    <br />
-    <img src="https://github.com/doooriian/42-Badges/blob/main/badges/ft_printfe.png" alt="Ft_printf Badge" width="150">
-  </p>
-</p>
+# Ft_printf
 
-<p align="center">
-  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/doooriian/Ft_printf?color=1A237E" />
-  <img alt="Code language count" src="https://img.shields.io/github/languages/count/doooriian/Ft_printf?color=00BCD4" />
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/doooriian/Ft_printf?color=7B1FA2" />
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/doooriian/Ft_printf?color=D32F2F" />
-</p>
+**Formatted output in C**
+
+<img src="https://img.shields.io/badge/42%20School-Project-2563EB?style=flat-square" alt="42 School project" />
+
+</div>
 
 ---
 
-## ✨ Overview
+## 🔎 Overview
 
 **Ft_printf** is an individual project at 42 School that recreates the standard C `printf` function from scratch. This project focuses on handling formatted output with essential specifiers and conversions, mastering variadic arguments, and ensuring robust string manipulation. It’s a key step in building foundational skills for the 42 curriculum.
 
@@ -31,7 +20,7 @@ The goal? Deliver a reliable, custom `Printf` that mirrors the core functionalit
 
 ---
 
-## 📑 Key Features
+## ✨ Key Features
 
 ### Supported Conversions
 - [`%c`](https://github.com/doooriian/Ft_printf/blob/main/print.c) — Prints a single character.
@@ -67,17 +56,14 @@ The goal? Deliver a reliable, custom `Printf` that mirrors the core functionalit
     cd Ft_printf
     make
     ```
-3. To use the library in your code, `#include` the following header
-    ```c
-    #include "printf.h"
+3. Include `printf.h` and link `libftprintf.a` in your program.
 
-</br>
 
 ## 🧪 Testing
 
 This project was tested using **[Francinette](https://github.com/xicodomingues/francinette)**, a widely-used third-party tester designed for 42 School projects, along with custom test cases to ensure compliance with the printf standard.
 
-## ✅ Results
+## 🏅 Results
 
 Here’s my score for the Ft_printf project:
 
