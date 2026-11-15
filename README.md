@@ -2,8 +2,6 @@
 
 > **42 School project** · C · Variadic functions
 
-An implementation of a formatted printing function inspired by the standard `printf`, built around variadic arguments and format parsing.
-
 ## Overview
 
 An implementation of a formatted printing function inspired by the standard `printf`, built around variadic arguments and format parsing.
