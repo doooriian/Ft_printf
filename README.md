@@ -1,24 +1,14 @@
-<p align="center">
-  <a href="https://42.fr/">
-    <img src="https://github.com/doooriian/42-Badges/blob/main/42_Logo.png" alt="42 Logo" width="100" height="100">
-  </a>
+<div align="center">
 
-  <h1 align="center">Ft_printf</h1>
+<a href="https://42.fr/"><img src="https://raw.githubusercontent.com/doooriian/42-Badges/main/badges/ft_printfe.png" width="125" alt="Ft_printf 42 project badge" /></a>
 
-  <p align="center">
-    A custom Printf implementation from 42 School
-    <br />
-    <br />
-    <img src="https://github.com/doooriian/42-Badges/blob/main/badges/ft_printfe.png" alt="Ft_printf Badge" width="125">
-  </p>
-<p align="center"><img src="https://img.shields.io/badge/42%20School-Project-2563EB?style=flat-square" alt="42 School project" /></p>
+# Ft_printf
 
-<p align="center">
-  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/doooriian/Ft_printf?color=1A237E" />
-  <img alt="Code language count" src="https://img.shields.io/github/languages/count/doooriian/Ft_printf?color=00BCD4" />
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/doooriian/Ft_printf?color=7B1FA2" />
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/doooriian/Ft_printf?color=D32F2F" />
-</p>
+**Formatted output in C**
+
+<img src="https://img.shields.io/badge/42%20School-Project-2563EB?style=flat-square" alt="42 School project" />
+
+</div>
 
 ---
 
