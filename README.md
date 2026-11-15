@@ -1,90 +1,48 @@
-<br />
-<p align="center">
-  <a href="https://42.fr/">
-    <img src="https://github.com/doooriian/42-Badges/blob/main/42_Logo.png" alt="42 Logo" width="250" height="250">
-  </a>
+# Ft_printf
 
-  <h1 align="center">Ft_printf</h1>
+> **42 School project** · C · Variadic functions
 
-  <p align="center">
-    A custom Printf implementation from 42 School
-    <br />
-    <br />
-    <img src="https://github.com/doooriian/42-Badges/blob/main/badges/ft_printfe.png" alt="Ft_printf Badge" width="150">
-  </p>
-</p>
+An implementation of a formatted printing function inspired by the standard `printf`, built around variadic arguments and format parsing.
 
-<p align="center">
-  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/doooriian/Ft_printf?color=1A237E" />
-  <img alt="Code language count" src="https://img.shields.io/github/languages/count/doooriian/Ft_printf?color=00BCD4" />
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/doooriian/Ft_printf?color=7B1FA2" />
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/doooriian/Ft_printf?color=D32F2F" />
-</p>
+## Overview
 
----
+An implementation of a formatted printing function inspired by the standard `printf`, built around variadic arguments and format parsing.
 
-## ✨ Overview
+## Features
 
-**Ft_printf** is an individual project at 42 School that recreates the standard C `printf` function from scratch. This project focuses on handling formatted output with essential specifiers and conversions, mastering variadic arguments, and ensuring robust string manipulation. It’s a key step in building foundational skills for the 42 curriculum.
+- Read and interpret `%` format specifiers
+- Format characters and strings
+- Format signed and unsigned integers and hexadecimal values
+- Build a reusable static library for other C projects
 
-The goal? Deliver a reliable, custom `Printf` that mirrors the core functionality of the original.
+## Technical approach
 
----
+The implementation is split into formatting, hexadecimal conversion and helper modules. The public interface lives in `printf.h`.
 
-## 📑 Key Features
+**Stack:** C · Variadic arguments · Static library.
 
-### Supported Conversions
-- [`%c`](https://github.com/doooriian/Ft_printf/blob/main/print.c) — Prints a single character.
-- [`%s`](https://github.com/doooriian/Ft_printf/blob/main/print.c) — Prints a string.
-- [`%p`](https://github.com/doooriian/Ft_printf/blob/main/print.c) — Prints a pointer address in hexadecimal.
-- [`%d`/`%i`](https://github.com/doooriian/Ft_printf/blob/main/print.c) — Prints a decimal integer (signed).
-- [`%u`](https://github.com/doooriian/Ft_printf/blob/main/print.c) — Prints an unsigned decimal integer.
-- [`%x`/`%X`](https://github.com/doooriian/Ft_printf/blob/main/print_x_xx.c) — Prints a hexadecimal integer (lowercase or uppercase).
-- [`%%`](https://github.com/doooriian/Ft_printf/blob/main/main.c) — Prints a literal percent sign.
+## Build and usage
 
-### Core Files
-- [`main.c`](https://github.com/doooriian/Ft_printf/blob/main/main.c) — Main file handling format string parsing and output.
-- [`print.c`](https://github.com/doooriian/Ft_printf/blob/main/print.c) — Routes to the appropriate conversion function.
-- [`utils.c`](https://github.com/doooriian/Ft_printf/blob/main/utils.c) — Contains several functions that are useful and necessary for other files.
+```bash
+git clone https://github.com/doooriian/Ft_printf.git
+cd Ft_printf
+make
+```
+
+This generates `libftprintf.a`. Include `printf.h` and link the library from a C program.
+
+```bash
+make fclean
+```
+
+## Verification
+
+Review the output with representative inputs and edge cases. No automated CI test suite is included in this repository; build and behaviour should be verified in a compatible local environment.
+
+## Notes and limitations
+
+Implements the conversions supported by this project, not the full libc `printf` specification. See `printf.h` and the source for actual supported flags and conversions.
 
 ---
 
-## 🛠️ Technologies Used
-- **[C](https://devdocs.io/c/)** — Core programming language.
-- **[Makefile](https://www.gnu.org/software/make/manual/make.html)** — Build automation tool.
-
----
-
-## 🚀 How to Build and Run
-
-1. Clone repository
-    ```bash
-    git clone git@github.com:doooriian/Ft_printf.git
-    ```
-
-2. Go inside project directory and run `make`
-    ```bash
-    cd Ft_printf
-    make
-    ```
-3. To use the library in your code, `#include` the following header
-    ```c
-    #include "printf.h"
-
-</br>
-
-## 🧪 Testing
-
-This project was tested using **[Francinette](https://github.com/xicodomingues/francinette)**, a widely-used third-party tester designed for 42 School projects, along with custom test cases to ensure compliance with the printf standard.
-
-## ✅ Results
-
-Here’s my score for the Ft_printf project:
-
-<p align="center">
-  <img src="https://github.com/doooriian/42-Badges/blob/main/badges/100Grade.png" alt="Ft_printf Grade">
-</p>
-
-## 📬 Contact
-
-Feel free to reach out or contribute to this project via [GitHub](https://github.com/doooriian)!
+Part of the [42 curriculum](https://42.fr/). Explore the other projects on [my GitHub profile](https://github.com/doooriian).
